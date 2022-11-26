@@ -1,0 +1,7 @@
+{
+    "server": {
+        "staticUrl": "/static",
+        "listenPort": 9001,
+        "dist": "/dist"
+    }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="110px" viewBox="0 0 58 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>bottle_1_</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="space" transform="translate(-6224.000000, -1820.000000)" fill-rule="nonzero">
+            <g id="bottle_1_" transform="translate(6224.000000, 1820.000000)">
+                <path d="M45.297,19.768 L42.91,17.815 L44.568,12.79 L40.899,9.311 L37.129,7.428 L38.789,4.218 L34.723,-2.27373675e-13 L23.512,-2.27373675e-13 L19.447,4.218 L21.107,7.476 L17.336,9.338 L13.668,12.804 L15.325,17.822 L12.939,19.768 C12.939,19.768 2.682,21.575 1.09,24.842 C-0.501,28.11 1.09,102 1.09,102 L1.784,102 C3.127,108 14.907,109.359 29.243,109.359 C43.58,109.359 55.359,108 56.702,102 L57.148,102 C57.148,102 58.857,28.35 57.148,24.84 C55.437,21.33 45.297,19.768 45.297,19.768 Z" id="Shape" fill="#D5CFFF"></path>
+                <path d="M6.869,62.301 C5.605,64.896 6.869,96 6.869,96 L7.42,96 C8.485,102 17.838,101.844 29.221,101.844 C40.603,101.844 49.956,102 51.022,96 L51.376,96 C51.376,96 52.733,65.09 51.376,62.303 C50.699,60.91 40.194,58.239 29.414,58.259 C18.595,58.281 7.501,61.002 6.869,62.301 Z" id="Shape" fill="#9188FB"></path>
+            </g>
+        </g>
+    </g>
+</svg>

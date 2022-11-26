@@ -1,0 +1,35 @@
+mixin header(opts)
+  doctype html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='keywords', content='Prism, Photography, Photos')
+    base(href='/')
+    title #{opts.title}
+    link(href='https://fonts.googleapis.com/css?family=Work%20Sans:100,200,300,400,500,600,700,800,900', rel='stylesheet', type='text/css', async='')
+    link(rel='stylesheet', type='text/css', href='/static/sass/index.css', async='')
+    meta(name='description', content=opts.metadescription)
+    meta(property='og:url', content=opts.metacontent)
+    meta(property='fb:app_id', content='356184997881243')
+    meta(property='og:type', content='article')
+    meta(property='og:title', content=opts.title)
+    meta(property='og:description', content=opts.desc)
+    meta(property='og:image', content=opts.fbimg)
+    script.
+
+      function submitEmail(event) {
+
+        var el = document.getElementById('emailEl'), conf = document.getElementById('emailConfirmation')
+        if (!el.value) return
+
+
+          var data = {
+              email: el.value,
+              page: window.location.href,
+              browser: window.navigator.userAgent
+          };
+
+          makeXMLRequest('/api/newsletter', 'POST', data, function () { });
+          el.value = ''
+          conf.style.display = 'block'
+          return false;
+      }; 

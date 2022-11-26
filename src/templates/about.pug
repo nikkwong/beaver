@@ -1,0 +1,52 @@
+extends partials/_layout
+append head
+    +header({"type": "page", "title": "About Fractal Filters.", "metadescription": "Read about our origins and how we want to impact photographers.", "fbimg":
+    "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital", "desc": "Fractals are the world's first glass filters for prism photography."}) 
+block content
+    section#about.page
+        #bg-bottom-wave.bg-wave
+            +rainbowWaveBottom()
+        #about-imgs.flex
+            .flex.flex-column
+                #img1.img-wrap.flex 
+                    img.ffshadow(src='/static/2017/me.jpg')
+                .img-wrap.flex
+                    img.ffshadow(src='/static/2017/ff-1.jpg')
+            .flex.flex-column
+                .img-wrap.flex
+                    img.ffshadow(src='/static/2017/fractal-filter-on-camera.jpg')
+        article.container.flex.align-items-center
+            div
+                p 
+                    | My parents were both photographers. Photography isn't usually the most lucrative career path in the world, and growing up, they both encouraged me to explore other career paths—basically, anything but photography. I ended up studying finance, and then ended up doing work in software engineering.
+                p
+                    | But nothing sparked my interest like wedding photography. I got some nice shots, and through shooting weddings I had the idea to create prism filters that more photographers could use.
+                p
+                    | Taking the idea to Kickstarter was rough, and, well, things are still rough in their own way.
+                p
+                    | But if you want to do something badly enough, you'll do it anyways, because it feels like the right thing to do. And even if you think you'll fail—if it's important enough, you should try it anyways.
+                p So here I am!
+                p Thanks for reading :-)
+                p -nikk
+    .more.flex.flex-equal.flex-column-sm
+        include partials/blocks/gallery
+        include partials/blocks/prism-guide
+    include partials/blocks/subscribe
+    style.
+        #about-imgs {
+            max-width: 1440px;
+            margin: 0 auto;
+            height: 600px;
+            max-height: 60vh;
+        }
+        #img1 {
+            margin-bottom: 2rem;
+            flex: 1 0 70%;
+        }
+        img {
+            height: 100%;
+        }
+        #about-imgs > * {
+            width: 50%;
+            margin: 0 1rem;
+        }

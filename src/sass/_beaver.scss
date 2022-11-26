@@ -1,0 +1,141 @@
+.title {
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background: url(/static/gif/blue.gif);
+    -webkit-background-clip: text;
+}
+
+h1.xl {
+    font-size: 5rem
+}
+
+h6 {
+    font-weight: 600
+}
+
+li {
+    img {
+        border-radius: 2px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: $color-primary
+}
+
+hr {
+    border: .5px solid $color-primary
+}
+
+p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+[class^="icon-"].bullet {
+    font-size: 32px;
+    transform: translate(0px, 2px);
+}
+[class^="icon-"].inline {
+    font-size: 12px;
+}
+[class^="icon-"] {
+    color: $color-primary;
+}
+// .invert {
+//     * {
+//         color: $color-primary;
+//     }
+//     [class^="icon-"] {
+//         color: $color-primary
+//     }
+//     hr {
+//         border: 1px solid $color-primary
+//     }
+
+// }
+button {
+    p {
+        margin: 0;
+        font-weight: 600;
+        text-transform: none;
+        color: white;
+    }
+    [class^="icon-"] { 
+        color: white
+    }
+    background: $color-primary;
+}
+h2 {
+    margin: 2rem 0!important;
+}
+
+// .beavershadow {
+//     box-shadow: 0px 10px 40px -10px black;
+// }
+input, select, textarea {    
+    height: 60px;
+    background: initial;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    padding: 1rem;
+    font-size: 16px;
+    border-radius: 0px;
+}
+select {
+    color: $color-primary;
+}
+
+button {
+    border-radius: 0px;
+}
+  
+::placeholder {
+    color: lighten($color-primary, 20)
+}
+
+.container {
+    max-width: 960px;
+}
+
+#bliss-text path {
+    fill: #1aa58f;
+}
+.input-wrap {
+    border-radius: 0px;
+    box-shadow: initial;
+    > * {
+        width: 100%
+    }
+}
+nav {
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .title {
+        h1 {
+            font-size: 140px;
+        }
+    }
+    h1 {
+        &.xl {
+            font-size: 5rem
+        }
+ 
+    }
+    .row.gutted {
+        >*:not(:first-child) {
+            margin-left: 2rem;
+        }
+        >*:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

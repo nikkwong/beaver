@@ -1,0 +1,14 @@
+extends partials/_layout
+append head
+    +header({"type": "page", "title": "Fractal Filters: Page not found.", "metadescription": "Fractal Filters 404 Page.", "fbimg": "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital/404", "desc": "404"}) 
+block content
+    section#about.page
+        #bg-bottom-wave.bg-wave
+            +rainbowWaveBottom()
+        .container
+            h1(class="xl" style="font-size: 10vw;padding: 10rem 0;")
+                | Page not found
+    .more.flex.flex-equal.flex-column-sm
+        include partials/blocks/gallery
+        include partials/blocks/prism-guide
+    include partials/blocks/subscribe

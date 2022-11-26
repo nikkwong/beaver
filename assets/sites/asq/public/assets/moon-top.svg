@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="3014px" height="506px" viewBox="0 0 3014 506" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3">
+            <g id="moon-top">
+                <g id="Welcome">
+                    <g id="Desktop-HD">
+                        <g id="Group">
+                            <path d="M3014,506 C3014,506 2339.29312,288.914062 1507,288.914062 C674.706882,288.914062 -2.72848411e-12,506 -2.72848411e-12,506 L3014,506 L3014,506 Z" id="Oval-5" fill="#FFFFFF"></path>
+                            <polygon id="Rectangle-26" fill="#F7FAFF" transform="translate(646.356203, 184.903549) rotate(-10.000000) translate(-646.356203, -184.903549) " points="646.356203 6.90354866 649.856203 6.90354866 649.856203 362.903549 642.856203 362.903549"></polygon>
+                            <path d="M618.160527,9.67134292 C614.085331,3.97798331 688.695683,-12.602095 717.394902,17.6557179 C698.953499,9.67134285 656.957402,31.0736873 625.980839,57.8158742 C640.56287,31.0736873 624.53455,17.6557178 618.160527,9.67134292 L618.160527,9.67134292 Z" id="Path-41" fill-opacity="0.400000006" fill="#F7FAFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-2" transform="translate(2044.816268, 303.447643) rotate(1.000000) translate(-2044.816268, -303.447643) translate(1674.816268, 239.447643)">
+                <polygon id="Path-78" fill="#FFFFFF" points="1.13686838e-12 63.7579033 195.951993 -1.98951966e-13 274.947063 40.320947 349.660232 15.9207601 385.80376 37.4026861 469.678514 12.4770847 739.503272 127.515807"></polygon>
+                <polygon id="Path-79" fill="#E4F5FD" points="60.3169575 54.6348703 196.260985 10.1464516 215.206972 19.4050664"></polygon>
+                <polygon id="Path-79" fill="#E4F5FD" points="285.604306 42.2166527 349.262824 22.4539898 361.559908 29.2928056"></polygon>
+                <polygon id="Path-79" fill="#E4F5FD" points="404.838498 36.87026 469.489564 18.8749708 487.044816 25.8629123"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

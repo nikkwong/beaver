@@ -1,0 +1,102 @@
+extends partials/_layout
+append head
+    +header({"type": "page", "title": "Fractal Filters: Image Gallery.", "metadescription": "Fractals are the world's first prism filters for creative photography and videography.", "fbimg": "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital/gallery", "desc": "Fractal Filters gallery"}) 
+block content
+    section#gallery.page
+        #bg-bottom-wave.bg-wave
+            +rainbowWaveBottom()
+        article.container
+            .gallery-imgs.flex 
+                .flex.flex-column
+                    .img-wrap.flex 
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/16788805_1400157836702892_4011802399982223360_n.jpg' alt='Fractals image 1')
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/13398963_1374927645867799_2144042287_n.jpg' alt="fractals image 3")
+                .flex.flex-column
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/15876211_588609237999416_6872684767297404928_n.jpg' alt="fractals image 2")
+            .gallery-imgs.flex 
+                .flex.flex-column
+                    .img-wrap.flex 
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/13117925_1276656042362146_1168931138_n.jpg' alt="")
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/1389051_1657648947847136_655414945_n.jpg' alt="")
+                .flex.flex-column
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/12393840_621683587969715_2093156766_n.jpg' alt="")
+            .gallery-imgs.flex 
+                .flex.flex-column
+                    .img-wrap.flex 
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/11875551_1522104808115589_854450398_n.jpg' alt='')
+                    .img-wrap.flex
+                        img.ffshadow(src='/static/2017/ff-1.jpg')
+                .flex.flex-column
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/12331793_1516873925278709_1870016849_n.jpg' alt='')
+            .gallery-imgs.flex 
+                .flex.flex-column
+                    .img-wrap.flex 
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/11917727_496454123862192_1186418018_n.jpg' alt='')
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/11934876_398338743702203_322382952_n.jpg' alt='')
+                .flex.flex-column
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/10725072_1001743576544363_340687329_n.jpg' alt='')
+            .gallery-imgs.flex 
+                .flex.flex-column
+                    .img-wrap.flex 
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/11934691_522706641210095_603319478_n.jpg' alt='')
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/10838318_738449389593021_2006593943_n.jpg' alt='')
+                .flex.flex-column
+                    .img-wrap.flex
+                        img.ffshadow(src='https://scontent-sjc2-1.cdninstagram.com/t51.2885-15/e35/10424659_1500112433641687_740338159_n.jpg' alt='')
+        //- #loader
+            .table
+            .table-cell
+                .svg-rotate
+                svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+                    polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+                    96.526,50.217 73.481,90.217 ')
+                svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+                    polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+                    96.526,50.217 73.481,90.217 ')
+                svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+                    polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+                    96.526,50.217 73.481,90.217 ')
+                h5.loading Loading...
+        //- .instagram-gallery
+            .instafeed-outerwrap
+            #instafeed
+            div(style='clear:both')
+        section#cta
+            .container.flex.justify-content-center
+                div.text-center
+                    a(href='http://www.instagram.com/getfractals', target='_blank') 
+                        button.bold 
+                            .flex.align-items-center
+                                .icon.icon-file-text.mr1
+                                | View more on Instagram 
+                    hgroup.constrain
+                        h6 Submit your image for it to be featured. You'll receive proper credits and link back to your blog/site.&nbsp;
+                            a.inherit(href='mailto:nikk@beaver.digital?subject=Submission_From_beaver.digital') Submit here.
+    .more.flex.flex-equal.flex-column-sm
+        include partials/blocks/gallery
+        include partials/blocks/prism-guide
+    include partials/blocks/subscribe
+    style.
+        .gallery-imgs {
+            max-height: 500px;
+            margin-bottom: 1rem;
+        }
+        .gallery-imgs > :first-child > * {
+            margin-right: 1rem;
+        }
+
+        .gallery-imgs > :first-child > :first-child {
+            margin-bottom: 1rem;
+            flex: 1 0 70%;
+        }
+        #cta {
+            padding: 5rem 0 0 0
+        }

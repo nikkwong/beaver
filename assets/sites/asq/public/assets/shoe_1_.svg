@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="144px" height="81px" viewBox="0 0 144 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>shoe_1_</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="space" transform="translate(-8688.000000, -2745.000000)" fill-rule="nonzero">
+            <g id="person_1_" transform="translate(8688.000000, 2314.000000)">
+                <g id="shoe_1_" transform="translate(0.000000, 431.000000)">
+                    <path d="M0.916,2.678 C0.916,2.678 56.983,-8.76 94.946,23.051 C94.946,23.051 128,22.01 144,49.665 L144,71.176 C143,72.192 123.196,79.454 123.196,79.454 C123.196,79.454 99.678,76.561 84.131,58.803 C77.775,56.966 19.229,60.102 0.916,2.678 Z" id="Shape" fill="#D5CFFF"></path>
+                    <g id="Group" transform="translate(0.000000, 2.000000)" fill="#796EFB">
+                        <path d="M0.916,0.678 C0.916,0.678 52.725,-6.956 90.686,31.452 C109.268,28.512 121.95,44.85 127.309,49.317 C127.309,49.317 129.541,72.987 123.737,77.454 C114.358,81.92 88.618,66.957 84.848,60.983 C81.08,55.01 20.121,61.906 0.916,0.678 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

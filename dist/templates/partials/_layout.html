@@ -1,0 +1,18 @@
+<body><main><script src="https://js.stripe.com/v3/" async></script><script>function makeXMLRequest (endpoint, type, data, cb) {
+    var oReq = new XMLHttpRequest();
+    // oReq.addEventListener("load", cb);
+    oReq.onreadystatechange = function() {
+        if (oReq.readyState == XMLHttpRequest.DONE) {
+        function someFunction(result) {
+            if (result.length > 4) {
+            cb(JSON.parse(result.substr(5))); // alerts "Sample Description"
+            } else {
+            cb(result);
+            }
+        }
+        someFunction(oReq.responseText);
+        }
+    }
+    oReq.open(type, window.location.origin + endpoint);
+    oReq.send(JSON.stringify(data));
+};</script></main></body><footer class="invert"><div class="container flex flex-column justify-content-center">Seattle</div></footer>

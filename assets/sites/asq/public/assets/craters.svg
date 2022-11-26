@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="894px" height="255px" viewBox="0 0 894 255" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.1 (29687) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-1012.000000, -1632.000000)" fill="#F7FBFD">
+            <g id="Group-7" transform="translate(1011.000000, 1631.000000)">
+                <path d="M420.25037,135 C565.225117,135 682.75037,119.329966 682.75037,100 C682.75037,80.6700338 565.225117,65 420.25037,65 C275.275623,65 157.75037,80.6700338 157.75037,100 C157.75037,119.329966 275.275623,135 420.25037,135 Z" id="Oval-10" transform="translate(420.250370, 100.000000) rotate(4.000000) translate(-420.250370, -100.000000) "></path>
+                <ellipse id="Oval-10" transform="translate(756.976589, 232.516561) rotate(3.000000) translate(-756.976589, -232.516561) " cx="756.976589" cy="232.516561" rx="138" ry="22.3312413"></ellipse>
+                <path d="M63,26 C97.2416545,26 125,20.627417 125,14 C125,7.372583 97.2416545,2 63,2 C28.7583455,2 1,7.372583 1,14 C1,20.627417 28.7583455,26 63,26 Z" id="Oval-10" transform="translate(63.000000, 14.000000) rotate(-359.000000) translate(-63.000000, -14.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

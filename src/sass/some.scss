@@ -1,0 +1,114 @@
+@import '_main';
+#desc {
+    #desc-content {
+        ul {
+            @include flex-direction(column);
+        }
+    }
+}
+#cube {
+    .container {
+        @include flex-direction(column);
+    }
+}
+footer {
+    #footer-bottom {
+        @include flex-direction(column);
+    }
+    img {
+        width: 100px;
+    }
+} 
+#links {
+    .container {
+        ul {
+            @include flex();
+            // @include flex-direction(column);
+            @include justify-content(space-between);
+            li {
+                color: white
+            }
+        }
+    }
+}
+nav {
+    z-index: 123;
+    padding: 4rem 2rem;
+    #nav-left {
+        img {
+            width: 100px
+        }
+    }
+    @include flex();
+    @include justify-content(space-between);
+    ul {
+        @include flex();
+        a {
+            li {
+                color: white;
+            }
+        }
+    }
+}
+#desc-2 {
+    .container {
+        @include flex-direction(column);
+        #desc-2-img {
+            img {
+                width: 350px;
+                height: 390px;
+                margin: 4rem 0 0;
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    #desc {
+        #desc-content {
+            ul {
+                @include flex-direction(row);
+            }
+        }
+    }
+    #cube {
+        .container {
+            @include flex-direction(row);
+        }
+    }
+    footer {
+        #footer-bottom {
+            @include flex-direction(column);
+        }
+    }
+    #links {
+        .container {
+            ul {
+                @include flex();
+                @include flex-direction(row);
+                @include justify-content(space-between);
+            }
+        }
+    }
+    #desc-2 {
+        .container {
+            @include flex-direction(row)
+        }
+    }
+}
+#desc #desc-content ul li hgroup {
+    margin: 0 auto;
+}
+
+@media (max-width:768px) {
+    footer {
+        &:before {
+            outline: initial
+        }
+    }
+    #video {
+        height: initial;
+        &:after {
+            outline: initial
+        }
+    }
+}

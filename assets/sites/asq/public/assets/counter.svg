@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1784px" height="855px" viewBox="0 0 1784 855" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>counter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="space" transform="translate(-6053.000000, -1707.000000)" fill-rule="nonzero">
+            <g id="counter" transform="translate(6053.000000, 1707.000000)">
+                <g id="Group" fill="#796EFB">
+                    <polygon id="Shape" points="1783 142.108 1536.993 0.014 502.596 599.447 128.875 383.663 0.842 457.591 0.861 496.894 620.74 854.845 1783 181.41"></polygon>
+                </g>
+                <path d="M808.926,377.659 C808.926,377.659 809.884,439.439 814.884,458.112 C819.884,476.785 973.884,432.074 979.884,427.429 C985.884,422.784 969.581,347.779 969.581,347.779 L808.926,377.659 Z" id="Shape" fill="#CAC2FF"></path>
+                <polygon id="Shape" fill="#9188FB" points="620.848 815.543 1783.22 142.108 1537.103 0.014 502.651 599.447 128.903 383.663 0.856 457.591"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

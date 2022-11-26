@@ -1,0 +1,62 @@
+{
+  "name": "beaver",
+  "description": "beaver",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "assert": "^1.3.0",
+    "async": "^0.9.0",
+    "aws-sdk": "^2.1.50",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.1",
+    "busboy": "^0.2.11",
+    "cheerio": "^0.20.0",
+    "compression": "^1.6.2",
+    "connect-multiparty": "^1.2.5",
+    "express": "~3.0",
+    "express-namespace": "~0.1.1",
+    "express-session": "^1.11.1",
+    "forever": "^0.14.2",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.2.1",
+    "jquery": "^3.2.1",
+    "mongodb": "^2.0.36",
+    "mongoose": "^4.1.6",
+    "multiparty": "^4.1.2",
+    "nodemailer": "^1.11.0",
+    "open": "0.0.3",
+    "passport": "~0.1.12",
+    "passport-local": "~0.1.6",
+    "paypal-rest-sdk": "^1.7.1",
+    "prerender-node": "^2.0.2",
+    "pug": "^2.0.0-rc.4",
+    "request": "~2.16.6",
+    "s3": "^4.4.0",
+    "s3-upload-stream": "^1.0.7",
+    "s3-uploader": "^1.0.0",
+    "shippo": "^1.1.3",
+    "stripe": "^4.7.0",
+    "svgo": "^0.5.3",
+    "uuid": "^2.0.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "graceful-fs": "^4.2.10"
+    }
+  },
+  "overrides": {
+    "graceful-fs": "^4.2.10"
+  },
+  "scripts": {
+    "prod": "NODE_ENV=production forever start index.js",
+    "dev": "nodemon --inspect index.js"
+  },
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "rewire": "^2.0.1",
+    "supervisor": "~0.4.1"
+  }
+}

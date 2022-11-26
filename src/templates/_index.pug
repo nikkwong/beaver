@@ -1,0 +1,334 @@
+extends partials/_layout
+append head
+    +header({"type": "home", "title": "Beaver Homepage Design.", "metadescription": "Beaver Digital: The portfolio of Nikk Wong.", "fbimg":
+    "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital", "desc": "Beaver Digital: Professional homepage design"}) 
+block content
+    #wrapper 
+        #wrapper-art
+        #wrapper-content
+            nav 
+                .flex.justify-space-between.align-items-center
+                    span.icon-noun_99016_cc(style='font-size: 64px;color: #dee0ef;transform: translateY(5px)')
+                    ul.flex.justify-content-center.row-sm
+                        li
+                            a(href='#about') About
+                        li
+                            a(href='#faq') Faq
+                        li
+                            a(href='#contact') Contact 
+            section#a 
+                #a-content.container.flex.justify-content-center 
+                    hgroup#title.flex.flex-column.align-items-center.text-center
+                        .title.flex.flex-equal.align-items-center
+                            //- +logoClipped() 
+                            //- safari bug needs to wrap this
+                            h1 
+                                | Beaver  
+                            span.icon-beaver
+                        h5 I design and build homepages for cool companies. Here's some recent work: 
+            section#b
+                #b-content.container.flex.justify-content-center   
+                    #b-content-items
+                        ul.row.flex.flex-wrap
+                            //- li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/broadcaster' target='_blank')
+                                    img.screencap(src='/static/img/broadcaster-compressed.png' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/broadcaster-logo.svg' alt="" style='width: 170px;height: 30px;')  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/jido' target='_blank')
+                                    img.screencap(src='/static/img/jido-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/jido-logo.svg' alt="" style='width:50px')  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/bliss' target='_blank')
+                                    img.screencap(src='/static/img/bliss-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/bliss-logo.png' alt="")
+                            li 
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/fractals' target='_blank')
+                                    img.screencap(src='/static/img/fractals-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center 
+                                        img.logo(src='/static/img/fractals-logo.png' alt="")
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/asq' target='_blank')
+                                    img.screencap(src='/static/img/asq-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/asq-logo.png' alt="")
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/verdict' target='_blank')
+                                    img.screencap(src='/static/img/verdict-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/verdict-logo.svg' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/slice' target='_blank')
+                                    img.screencap(src='/static/img/slice-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/slice-logo.png' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/cryptagami' target='_blank')
+                                    img.screencap(src='/static/img/cryptagami-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/cryptagami-logo.svg' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/superfamous' target='_blank') 
+                                    img.screencap(src='/static/img/superfamous-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/superfamous-logo.png' alt="")
+                            li#your-content-wrap
+                                a.flex.align-items-center.justify-content-center(href='#contact')
+                                    #your-content.flex.justify-content-center.align-items-center
+                                        h6 Your project
+                                        span.icon-chevrons-right.ml1(style='font-size: 12px;transform: translateY(1px);')
+                            li  
+                #spacer.container
+                    .space  
+                    hr
+            section#c
+                #c-content.container.flex.flex-column 
+                    .flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2#about About
+                    //- hr
+                    .flex.row.gutted.flex-column-sm.flex-equal 
+                        p I’m 
+                            a(href='https://www.nikkwong.com' target='_blank') Nikk Wong 
+                            | — a designer and programmer in San Francisco. In 2014 I graduated and started working in finance, which... wasn't for me. I started programming enterprise applications, and that also wasn't for me. In 2016 I started designing and freelancing, which eventually lead to the start of Beaver in 2017. I also founded and currently run 
+                            a(href='https://www.getfractals.com' target='_blank')
+                                strong Fractals
+                            |. Thomas Malone helps run operations. :)
+                             
+                        .affiliate
+                            #affiliate-inner-1.affiliate-inner 
+                                #affiliate-inner-2.affiliate-inner
+                                    #affiliate-inner-3.affiliate-inner
+                                        small(style='padding: 2rem 1rem;margin: 0;line-height: 18px;')
+                                            strong Support Beaver!&nbsp;
+                                            | If you give me a successful referral I'll give you $500. Just make sure your referral mentions that they were referred by you.
+                                        style.
+                                            .affiliate {
+                                                position: relative; 
+                                                margin: 1rem 0;
+                                                border: 1px solid #394dff;
+                                                padding: 0rem 0;
+                                            }
+                                            .affiliate-inner {
+                                                margin: .75rem;
+                                                border: 1px solid #394dff;
+                                                height: calc(100% - 1.5rem);
+                                            }
+                            //- p poop
+                        //- p Visual design is the most important component in communicating your product’s value proposition. I like to design home pages that excite visitors enough to convert them into ambassadors for your brand—nothing is more powerful than word of mouth.
+            section#d
+                #d-content.container.flex.flex-column
+                    #d-content-title.flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2 Work with me
+                    //- hr
+                    #d-content-bullets.flex.flex-column-sm.justify-space-around.row.gutted
+                        .d-content-bullet
+                            .d-content-bullet-inner.flex.flex-column.align-items-center
+                                h1.xl $30k
+                                p homepage design + code
+                        .d-content-bullet
+                            .d-content-bullet-inner.flex.flex-column.align-items-center
+                                h1.xl 14 day
+                                p turnaround
+            section#e
+                #e-content.container.flex.flex-column
+                    .flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2#faq Your questions
+                    hr
+                    .row.gutted.flex.flex-equal
+                        .accordion.flex.flex-column
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 How does it work?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p First, you email me. We chat about your project and brand a lot. We define styles that you like, and look at other work that you’re a fan of that you’d like to emulate.
+
+                                        p I’ll spend day one defining the content and sections for your homepage. Once that’s been agreed
+                                            | &nbsp;upon, I’ll create a visual style and color guide that we’ll use for the project. After that’s been agreed upon, I’ll implement that visual style, which will take us through week one. We’ll
+                                            | &nbsp;be talking a lot.
+
+                                        p Week two is much less collaborative, I’ll mostly be heads down coding the project up. Once it’s delivered, we’ll go over revisions and everyone goes home happy.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 I like your illustrations. Can you include those?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Depending on the project. If you must have them, please make sure to request them specifically.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Are you available for other work?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Yeah, as you can see the portfolio is kinda small so I'm just trying to get the ball rolling. Just email me and I'll be glad to set something up.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 What format will the assets you create be in？
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Graphics will be delivered as SVG. The source HTML files will be written in pug (jade), and the
+                                //-             | source css will be scss or sass. I’m comfortable with writing source JS in whatever you’re using,
+                                //-             | including Typescript, coffee, etc. but if you have no preference I’ll default to vanilla js.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 I like your work but prefer a different visual style.
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p I like to experiment, so show me what you’re into and let’s make it work.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 How many revisions do your clients get?
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Unlimited. 🙂
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 Will you work from our office?
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Sure.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 What format will the assets you create be in？
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Always up to latest web standards. Graphics will be delivered as SVG. The source HTML files will be written in pug (jade), and the
+                                            | source css will be scss or sass. I’m comfortable with writing source JS in whatever you’re using,
+                                            | including Typescript, coffee, etc. but if you have no preference I’ll default to js.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 I like your work but prefer a different visual style.
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p That's not a problem. I'm also into learning new things and exploring new boundaries so I'll try to push my limits for your project.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Will you work from our office?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Yes. I typically work out of coworking spaces in and around San Francisco, but I love collaborating closely with others and there's nothing like meeting in person.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Is expedited delivery available?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Erm, 14 days is already pretty fast! But, depending on my schedule, I might be up for it.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 How many revisions do your clients get?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Unlimited. 🙂
+            //- section#f
+                #f-art.container
+                    hr
+                    .flex.justify-content-center
+                        +logoClipped() 
+        section#g
+            #g-content.container.flex.flex-column
+                #g-content-title.flex.align-items-center
+                    span.icon-noun_143206_cc.mr1.bullet
+                    h2#contact Ready? 
+                        a(href='mailto:nikkwong0@gmail.com=Submission_From_beaver.digital') Email
+                        |  me, or: 
+                form(action="https://formspree.io/nikkwong0@gmail.com" method="POST")
+                    .row.flex.flex-equal.flex-column-sm
+                        .input-wrap
+                            input(type='text' name='name' placeholder='Your name')
+                        .input-wrap 
+                            input(type='email' name='email' placeholder='Your email')
+                    .row.flex.flex-equal.flex-column-sm
+                        .input-wrap
+                            select(type='text' name='name')
+                                option(value='' disabled selected) When would you like to begin?
+                                option(value='Immediately') Start immediately
+                                option(value='2 week') Start within 2 weeks
+                                option(value='1 month') Start within a month
+                                option(value='Over 1 month') Start after a month
+                        .input-wrap 
+                            input(type='text' name='website' placeholder='Current website (optional)')
+                    .row.flex.flex-equal
+                        .input-wrap
+                            textarea(type='text' name='body' placeholder='Leave a message... (optional)')
+                    .flex.justify-content-end 
+                        button(type='submit') 
+                            .flex.align-items-center
+                                p Submit
+                                .icon-chevron-right.ml1.inline
+        footer 
+            #footer-content.container.flex.flex-column
+                #footer-content-top.hide-lg.flex.justify-content-center
+                    .icon-beaver
+                #footer-content-bottom.flex.justify-content-center.justify-space-between-lg.align-items-center
+                    .flex.align-items-center.hide-sm
+                        span.icon-noun_890923_cc.mr1
+                        small design by nikkwong
+                    //- .flex.justify-content-center
+                    .icon-beaver.hide-sm
+                    .flex.align-items-center
+                        span.icon-noun_7150_cc.mr1
+                        small built in Seattle
+        script.
+            window.addEventListener('DOMContentLoaded', function() {
+
+                setTimeout(() => {
+
+                    const el = document.getElementById('title')
+                    el.classList.add('show')
+
+                }, 500)
+
+            });
+            (function () {
+                var accordions, i;
+                
+                // Make sure the browser supports what we are about to do.
+                if (!document.querySelectorAll || !document.body.classList) return;
+                
+                // Using a function helps isolate each accordion from the others
+                function makeAccordion(accordion) {
+                    var targets, currentTarget, i;
+                    
+                    targets = accordion.querySelectorAll('.e-content-item-head');
+                    for(i = 0; i < targets.length; i++) {
+                    targets[i].addEventListener('click', function () {  
+
+                        if (currentTarget)
+                            currentTarget.classList.remove('expanded');
+                        
+                        if (currentTarget === arguments[0].target.closest('.e-content-item')) return currentTarget = null
+                         
+                        currentTarget = this.closest('.e-content-item');
+                        currentTarget.classList.add('expanded');
+                    }, false); 
+                    }
+
+                    accordion.classList.add('js');
+                }
+
+                // Find all the accordions to enable
+                accordions = document.querySelectorAll('.accordion');
+                
+                // Array functions don't apply well to NodeLists
+                for(i = 0; i < accordions.length; i++) {
+                    makeAccordion(accordions[i]);
+                }
+                
+            })();

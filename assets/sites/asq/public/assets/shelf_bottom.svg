@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1152px" height="565px" viewBox="0 0 1152 565" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>shelf_bottom</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="space" transform="translate(-6030.000000, -1540.000000)" fill-rule="nonzero">
+            <g id="shelf_bottom" transform="translate(6030.000000, 1540.000000)">
+                <polygon id="Shape" fill="#A8F7F4" points="1152 92.672 993.047 0.873 324.771 388.132 83.326 248.726 0.609 296.487 0.619 332.878 401.111 564.13 1152 129.062"></polygon>
+                <polygon id="Shape" fill="#D2F7F6" points="401.156 527.739 1152.096 92.672 993.093 0.873 324.795 388.132 83.338 248.726 0.615 296.487"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

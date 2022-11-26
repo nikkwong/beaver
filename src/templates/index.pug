@@ -1,0 +1,422 @@
+extends partials/_layout
+append head
+    +header({"type": "home", "title": "Beaver Homepage Design.", "metadescription": "Beaver Digital: The portfolio of Nikk Wong & Thom Malone.", "fbimg":
+    "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital", "desc": "Beaver Digital: Professional homepage design"}) 
+block content
+    #wrapper
+        #wrapper-art
+        #wrapper-content
+            nav 
+                .flex.justify-space-between.align-items-center
+                    span.icon-noun_99016_cc(style='font-size: 64px;color: #dee0ef;transform: translateY(5px)')
+                    ul.flex.justify-content-center.row-sm
+                        li
+                            a(href='#about') About
+                        li
+                            a(href='#faq') Faq
+                        li
+                            a(href='#contact') Contact 
+            section#a 
+                #a-content.container.flex.justify-content-center 
+                    hgroup#title.flex.flex-column.align-items-center.text-center
+                        .title.flex.flex-equal.align-items-center
+                            //- +logoClipped() 
+                            //- safari bug needs to wrap this  
+                            h1 
+                                | Beaver   
+                            span.icon-beaver 
+                        h5 We design and build homepages for cool companies. Here's some recent work:
+            section#b  
+                #b-content.container.flex.justify-content-center   
+                    #b-content-items
+                        ul.row.flex.flex-wrap
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/digitalbits' target='_blank')
+                                    img.screencap(src='/digitalbits/static/home.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        include ../../assets/sites/digitalbits/logo.svg 
+                            li
+                                div.flex.flex-column.align-items-center.justify-content-center(href='#' target='_blank' tooltip-disabled disabled)
+                                    .top
+                                        small This product was incubated and created by us! It has since been retired and is no longer available.
+                                        i
+                                    img.screencap(src='/blendful/static/home.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        //- include ../../assets/sites/digitalbits/logo.svg 
+                                        <svg id="bfff" style='width:160px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 217.4467 30.5665">
+                                            <title>logo</title>
+                                            <style>
+                                                |#bfff * {
+                                                |    fill: #0566ff!important
+                                                |}
+                                            </style>
+                                            <g>
+                                                <path d="M77.07,23.54a10.8609,10.8609,0,0,1-2.16,3.48,8.8115,8.8115,0,0,1-3.1,2.14,9.6416,9.6416,0,0,1-3.68.72,7.6773,7.6773,0,0,1-4.02-.9531,10.7006,10.7006,0,0,1-2.66-2.2217V29.48h-6.08V.28h6.08V11.0928a9.6168,9.6168,0,0,1,2.7-2.4805A7.4739,7.4739,0,0,1,68.13,7.64a9.5218,9.5218,0,0,1,3.64.7208,9.0129,9.0129,0,0,1,3.12,2.14,10.669,10.669,0,0,1,2.18,3.48,12.7583,12.7583,0,0,1,.82,4.74v.08A12.7509,12.7509,0,0,1,77.07,23.54Zm-5.26-4.82a6.8158,6.8158,0,0,0-.42-2.4355,5.8217,5.8217,0,0,0-1.14-1.8926,5.052,5.052,0,0,0-1.66-1.209,4.8939,4.8939,0,0,0-5.68,1.209,6.0069,6.0069,0,0,0-1.12,1.8926,6.8048,6.8048,0,0,0-.42,2.4355v.08a6.8159,6.8159,0,0,0,.42,2.4375A6.0181,6.0181,0,0,0,62.91,23.13a4.96,4.96,0,0,0,5.68,1.207,5.0317,5.0317,0,0,0,1.66-1.207,5.8854,5.8854,0,0,0,1.14-1.8731,6.78,6.78,0,0,0,.42-2.457Z" style="fill: #fff"/>
+                                                <path d="M82.65,29.48V.28h6.08V29.48Z" style="fill: #fff"/>
+                                                <path d="M114.43,20.12c-.0142.2129-.0342.4668-.06.76H99.45a5.1232,5.1232,0,0,0,1.82,3.1406,5.4457,5.4457,0,0,0,3.42,1.06,6.7646,6.7646,0,0,0,2.72-.5205,9.2508,9.2508,0,0,0,2.48-1.68l3.48,3.08a10.7722,10.7722,0,0,1-3.68,2.9394,11.405,11.405,0,0,1-5.08,1.0606,12.2361,12.2361,0,0,1-4.46-.8,10.3274,10.3274,0,0,1-3.56-2.28,10.533,10.533,0,0,1-2.34-3.5,11.6053,11.6053,0,0,1-.84-4.5V18.8a11.9966,11.9966,0,0,1,.78-4.32,10.9824,10.9824,0,0,1,2.18-3.56,10.1745,10.1745,0,0,1,7.64-3.28,10.4356,10.4356,0,0,1,4.64.961,9.43,9.43,0,0,1,3.26,2.58,10.74,10.74,0,0,1,1.92,3.7187,15.4018,15.4018,0,0,1,.62,4.3809v.08C114.45,19.6533,114.4423,19.9072,114.43,20.12Zm-7.34-6.34a3.986,3.986,0,0,0-3.08-1.26,4.0826,4.0826,0,0,0-3.1,1.2393,6.2222,6.2222,0,0,0-1.54,3.32h9.16A5.916,5.916,0,0,0,107.0892,13.78Z" style="fill: #fff"/>
+                                                <path d="M132.5287,29.48V17.55a4.8078,4.8078,0,0,0-.96-3.2519,3.4211,3.4211,0,0,0-2.72-1.0977,3.6109,3.6109,0,0,0-2.78,1.0977,4.6191,4.6191,0,0,0-1.02,3.2519V29.48h-6.08V8.04h6.08v3.0645a13.2166,13.2166,0,0,1,1.14-1.3086,7.9415,7.9415,0,0,1,1.38-1.1074,6.8261,6.8261,0,0,1,1.68-.7656,7.0706,7.0706,0,0,1,2.08-.2833,6.8509,6.8509,0,0,1,5.38,2.12,8.4414,8.4414,0,0,1,1.9,5.8408V29.48Z" style="fill: #fff"/>
+                                                <path d="M159.3685,29.48V26.4268a9.614,9.614,0,0,1-2.7,2.48,7.474,7.474,0,0,1-3.98.9727,9.5362,9.5362,0,0,1-3.64-.72,8.9969,8.9969,0,0,1-3.12-2.14,10.6694,10.6694,0,0,1-2.18-3.48,12.7408,12.7408,0,0,1-.82-4.74v-.08a12.7482,12.7482,0,0,1,.82-4.74,10.8277,10.8277,0,0,1,2.16-3.4795,8.7974,8.7974,0,0,1,3.1-2.14,9.62,9.62,0,0,1,3.68-.7208,7.6881,7.6881,0,0,1,4.02.9532,10.7126,10.7126,0,0,1,2.66,2.2226V.28h6.08V29.48Zm.08-10.76a6.8048,6.8048,0,0,0-.42-2.4355,6.0257,6.0257,0,0,0-1.12-1.8926,4.958,4.958,0,0,0-5.68-1.209,5.0468,5.0468,0,0,0-1.66,1.209,5.8586,5.8586,0,0,0-1.14,1.8721,6.7822,6.7822,0,0,0-.42,2.456v.08a6.8269,6.8269,0,0,0,.42,2.4375,5.8323,5.8323,0,0,0,1.14,1.8926,5.0266,5.0266,0,0,0,1.66,1.207,4.8988,4.8988,0,0,0,5.68-1.207,6.037,6.037,0,0,0,1.12-1.8926,6.8159,6.8159,0,0,0,.42-2.4375Z" style="fill: #fff"/>
+                                                <path d="M181.5677,5.26a6.7981,6.7981,0,0,0-1.44-.14q-2.2,0-2.2,2.32v.84h4.92v4.959h-4.84V29.48h-6.08v-16.24h-2.52v-5h2.52V6.88q0-3.56,1.7-5.22a6.79,6.79,0,0,1,4.94-1.66,16.184,16.184,0,0,1,2.46.16,11.4339,11.4339,0,0,1,1.86.44V5.64A11.2145,11.2145,0,0,0,181.5677,5.26Z" style="fill: #fff"/>
+                                                <path d="M199.5673,29.48V26.415a13.1086,13.1086,0,0,1-1.14,1.3086,7.986,7.986,0,0,1-1.38,1.1094,6.8758,6.8758,0,0,1-1.68.7656,7.1112,7.1112,0,0,1-2.08.2813,6.8471,6.8471,0,0,1-5.38-2.12,8.4367,8.4367,0,0,1-1.9-5.84V8.04h6.08V19.9707a4.8147,4.8147,0,0,0,.96,3.2529,3.4235,3.4235,0,0,0,2.72,1.0957,3.6135,3.6135,0,0,0,2.78-1.0957,4.6252,4.6252,0,0,0,1.02-3.2529V8.04h6.08V29.48Z" style="fill: #fff"/>
+                                                <path d="M211.3666,29.48V.28h6.08V29.48Z" style="fill: #fff"/>
+                                            </g>  
+                                            <g>
+                                                <path d="M7.55,15.7566a7.32,7.32,0,0,0,14.64,0h2a9.32,9.32,0,1,1-9.32-9.31h9.35v2H14.87A7.3215,7.3215,0,0,0,7.55,15.7566Z" style="fill: #fff"/>
+                                                <rect x="27.6" y="6.4465" width="11.76" height="2" style="fill: #fff"/>
+                                            </g>
+                                            <rect x="27.6" y="0.9565" width="11.74" height="2" style="fill: #fff"/> 
+                                            <path d="M29.62,15.7566A14.81,14.81,0,1,1,14.81.9565h9.41v2H14.81a12.805,12.805,0,1,0,12.81,12.8Z" style="fill: #fff"/>
+                                            </svg>
+
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/flyingcarpet' target='_blank')
+                                    img.screencap(src='/static/img/flyingcarpet.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/flyingcarpet-logo.svg' alt="" style='width: 160px;height: 20px;')    
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/veridium' target='_blank')
+                                    img.screencap(src='/static/img/veridium.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/veridium-logo.svg' alt="" style='width: 120px;height: 20px;')    
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/mevu' target='_blank')
+                                    img.screencap(src='/static/img/mevu-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/mevu-logo.png' alt="" style='width: 160px;height: 30px;')  
+                            li 
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/outpost' target='_blank') 
+                                    img.screencap(src='/static/img/outpost-compressed.png' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/outpost-logo.svg' alt="" style='width: 110px;height: 30px;')  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/junior' target='_blank')
+                                    img.screencap(src='/static/img/juni.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center 
+                                        img.logo(src='/static/img/juni-logo.svg' alt="" style='width: 170px;height: 25px;')    
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/jido' target='_blank')
+                                    img.screencap(src='/static/img/jido-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/jido-logo.svg' alt="" style='width:50px')  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/cryptagami' target='_blank' tooltip-disabled)
+                                    .top
+                                        small Another failed startup attempt of ours. It was worth a shot! 🙃 
+                                        i
+                                    img.screencap(src='/static/img/cryptagami-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/cryptagami-logo.svg' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='#' tooltip-disabled style='cursor:not-allowed')
+                                    .top
+                                        small Unfortunately this project is unavailable as it was cancelled half way through. It continues to live on in our hearts.
+                                        i
+                                    img.screencap(src='/static/img/miles.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/miles-logo.svg' alt="" style='height: 15px;width: 210px;')  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/slice' target='_blank' tooltip-disabled)
+                                    .top
+                                        small While we usually create the designs and write the website code for our clients, only the design was necessary on this project, and only a PNG is available. 
+                                        i
+                                    img.screencap(src='/static/img/slice-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/slice-logo.png' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/bliss' target='_blank' tooltip-disabled)
+                                    .top
+                                        small This was a failed startup attempt of ours. Not every project is a winner. 🙃 
+                                        i
+                                    img.screencap(src='/static/img/bliss-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/bliss-logo.png' alt="")
+                            li 
+                                a.flex.flex-column.align-items-center.justify-content-center(href='https://www.getfractals.com' target='_blank' tooltip-disabled)
+                                    .top
+                                        small This project is a result of Nikk's Kickstarter in 2014, which eventually led to a few projects including the creation of Beaver. The following link will take you to the live site. Support it if you like it! ✌️
+                                        i
+                                    img.screencap(src='/static/img/fractals-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center 
+                                        img.logo(src='/static/img/fractals-logo.png' alt="")
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/asq' target='_blank')
+                                    img.screencap(src='/static/img/asq-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/asq-logo.png' alt="")
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/verdict' target='_blank')
+                                    img.screencap(src='/static/img/verdict-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/verdict-logo.svg' alt="")  
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/superfamous' target='_blank') 
+                                    img.screencap(src='/static/img/superfamous-compressed.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        img.logo(src='/static/img/superfamous-logo.png' alt="")
+                            li
+                                a.flex.flex-column.align-items-center.justify-content-center(href='/' target='_blank' tooltip-disabled)
+                                    .top
+                                        small TODO: (Insert some bad joke about recursion here.) 🤭 
+                                        i
+                                    img.screencap(src='/beaver/static/home.jpg' alt="")
+                                    .b-content-item-logo.flex.align-items-center.justify-content-center
+                                        .icon-beaver(style='font-size:74px')
+                            li#your-content-wrap(style='max-height: 239px;')
+                                a.flex.align-items-center.justify-content-center(href='#contact')
+                                    #your-content.flex.justify-content-center.align-items-center 
+                                        h6 Your project
+                                        span.icon-chevrons-right.ml1(style='font-size: 12px;transform: translateY(1px);')
+                            li  
+                #spacer.container
+                    .space
+                    hr
+            section#c
+                #c-content.container.flex.flex-column 
+                    .flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2#about About
+                    //- hr
+                    .flex.row.gutted.flex-column-sm.flex-equal
+                        p We work with companies to create bold digital experiences. Our background consists of building applications across the stack, but we're especially keen on creating visually enthralling homepages. Why? The internet is noisy, attention spans are short. Strong imagery, though, will always leave a lasting impression. Sites are designed and coded by 
+                            a(href='https://nikkwong.com' target='_blank') 
+                                strong Nikk Wong 
+                            | (who also founded 
+                            a(href='https://www.getfractals.com' target='_blank') 
+                                strong Fractals
+                            |), while Javon Bangs works on implementation.
+                             
+                        .affiliate
+                            #affiliate-inner-1.affiliate-inner 
+                                #affiliate-inner-2.affiliate-inner
+                                    #affiliate-inner-3.affiliate-inner
+                                        small(style='padding: 2rem 1rem;margin: 0;line-height: 18px;')
+                                            strong Support Beaver!&nbsp;
+                                            | If you give us a successful referral we'll give you $500. Just make sure your referral mentions that they were referred by you.
+                                        style.
+                                            .affiliate {
+                                                position: relative;
+                                                margin: 1rem 0;
+                                                border: 1px solid #394dff;
+                                                padding: 0rem 0;
+                                            }
+ 
+                                            .affiliate-inner {
+                                                margin: .75rem;
+                                                border: 1px solid #394dff;
+                                                height: calc(100% - 1.5rem);
+                                            }
+                            //- p poop
+                        //- p Visual design is the most important component in communicating your product’s value proposition. I like to design home pages that excite visitors enough to convert them into ambassadors for your brand—nothing is more powerful than word of mouth.
+            section#d
+                #d-content.container.flex.flex-column
+                    #d-content-title.flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2 Work with us
+                    //- hr
+                    #d-content-bullets.flex.flex-column-sm.justify-space-around.row.gutted
+                        .d-content-bullet
+                            .d-content-bullet-inner.flex.flex-column.align-items-center
+                                h1.xl 100%
+                                p client satisfaction
+                        .d-content-bullet
+                            .d-content-bullet-inner.flex.flex-column.align-items-center
+                                h1.xl 14 day
+                                p turnaround
+            section#e
+                #e-content.container.flex.flex-column
+                    .flex.align-items-center
+                        span.icon-noun_143206_cc.mr1.bullet
+                        h2#faq Your questions
+                    hr
+                    .row.gutted.flex.flex-equal
+                        .accordion.flex.flex-column
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 How does it work?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p First, you email us. We chat about your project and brand a lot. We define styles that you like, and look at other work that you’re a fan of that you’d like to emulate.
+
+                                        p We'll spend day one defining the content and sections for your homepage. Once that’s been agreed
+                                            | &nbsp;upon, we'll create a visual style and color guide that we’ll use for the project. After that’s been agreed upon, we will implement that visual style, which will take us through week one. We’ll
+                                            | &nbsp;be talking a lot.
+
+                                        p Week two is much less collaborative, we will mostly be heads down coding the project up. Once it’s delivered, we’ll go over revisions and everyone goes home happy.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 I like your illustrations. Can you include those?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Depending on the project. If you must have them, please make sure to request them specifically.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Are you available for other work?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Yeah, as you can see the portfolio is kinda small so we're just trying to get the ball rolling. Just email us and we'll be glad to set something up.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 What format will the assets you create be in？
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Graphics will be delivered as SVG. The source HTML files will be written in pug (jade), and the
+                                //-             | source css will be scss or sass. We're comfortable with writing source JS in whatever you’re using,
+                                //-             | including Typescript, coffee, etc. but if you have no preference we'll default to vanilla js.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 I like your work but prefer a different visual style.
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p We like to experiment, so show us what you’re into and let’s make it work.
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 How many revisions do your clients get?
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Unlimited. 🙂
+                                //- .e-content-item
+                                    .e-content-item-head.flex.align-items-center
+                                        span.icon-noun_45660_cc.mr1
+                                    //-     h6 Will you work from our office?
+                                //- .e-content-item-body
+                                    .e-content-item-body-inner
+                                    //-         p Sure.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 What format will the assets you create be in？
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Always up to latest web standards. Graphics will be delivered as SVG. The source HTML files will be written in pug (jade), and the 
+                                            | source css will be scss or sass. We're comfortable with writing source JS in whatever you’re using,
+                                            | including Typescript, coffee, etc. but if you have no preference we'll default to js.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 I like your work but prefer a different visual style.
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p That's not a problem. We're also into learning new things and exploring new boundaries so we'll try to push our limits for your project.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Will you work from our office?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p If you're located in Seattle, yes. We typically work out of coworking spaces in and around Seattle and Toronto, but we love collaborating closely with others and there's nothing like meeting in person.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 Is expedited delivery available?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Erm, 14 days is already pretty fast! But, depending on our schedule, we might be up for it.
+                            .e-content-item
+                                .e-content-item-head.flex.align-items-center
+                                    span.icon-noun_45660_cc.mr1
+                                    h6 How many revisions do your clients get?
+                                .e-content-item-body
+                                    .e-content-item-body-inner
+                                        p Unlimited (within reason). 🙂
+            //- section#f
+                #f-art.container
+                    hr
+                    .flex.justify-content-center
+                        +logoClipped() 
+        section#g
+            #g-content.container.flex.flex-column
+                #g-content-title.flex.align-items-center
+                    span.icon-noun_143206_cc.mr1.bullet
+                    h2#contact Ready? 
+                        a(href='mailto:nikkwong0@gmail.com=Submission_From_beaver.digital') Email
+                        |  us, or: 
+                form(action="https://formspree.io/nikkwong0@gmail.com" method="POST")
+                    .row.flex.flex-equal.flex-column-sm
+                        .input-wrap
+                            input(type='text' name='name' placeholder='Your name')
+                        .input-wrap 
+                            input(type='email' name='email' placeholder='Your email')
+                    .row.flex.flex-equal.flex-column-sm
+                        .input-wrap
+                            select(type='text' name='name')
+                                option(value='' disabled selected) When would you like to begin?
+                                option(value='Immediately') Start immediately
+                                option(value='2 week') Start within 2 weeks
+                                option(value='1 month') Start within a month
+                                option(value='Over 1 month') Start after a month
+                        .input-wrap 
+                            input(type='text' name='website' placeholder='Current website (optional)')
+                    .row.flex.flex-equal
+                        .input-wrap
+                            textarea(type='text' name='body' placeholder='Leave a message... (optional)')
+                    .flex.justify-content-end 
+                        button(type='submit') 
+                            .flex.align-items-center
+                                p Submit
+                                .icon-chevron-right.ml1.inline
+        footer 
+            #footer-content.container.flex.flex-column
+                #footer-content-top.hide-lg.flex.justify-content-center
+                    .icon-beaver
+                #footer-content-bottom.flex.justify-content-center.justify-space-between-lg.align-items-center
+                    .flex.align-items-center.hide-sm
+                        span.icon-noun_890923_cc.mr1
+                        small design by Beaver Digital
+                    //- .flex.justify-content-center
+                    .icon-beaver.hide-sm
+                    .flex.align-items-center
+                        span.icon-noun_7150_cc.mr1
+                        small built in Seattle & Toronto
+        script.
+            window.addEventListener('DOMContentLoaded', function() {
+
+                setTimeout(() => {
+
+                    const el = document.getElementById('title')
+                    el.classList.add('show')
+
+                }, 500)
+
+            });
+            (function () {
+                var accordions, i;
+                
+                // Make sure the browser supports what we are about to do.
+                if (!document.querySelectorAll || !document.body.classList) return;
+                
+                // Using a function helps isolate each accordion from the others
+                function makeAccordion(accordion) {
+                    var targets, currentTarget, i;
+                    
+                    targets = accordion.querySelectorAll('.e-content-item-head');
+                    for(i = 0; i < targets.length; i++) {
+                    targets[i].addEventListener('click', function () {  
+
+                        if (currentTarget)
+                            currentTarget.classList.remove('expanded');
+                        
+                        if (currentTarget === arguments[0].target.closest('.e-content-item')) return currentTarget = null
+                         
+                        currentTarget = this.closest('.e-content-item');
+                        currentTarget.classList.add('expanded');
+                    }, false); 
+                    }
+
+                    accordion.classList.add('js');
+                }
+
+                // Find all the accordions to enable
+                accordions = document.querySelectorAll('.accordion');
+                
+                // Array functions don't apply well to NodeLists
+                for(i = 0; i < accordions.length; i++) {
+                    makeAccordion(accordions[i]);
+                }
+                
+            })();

@@ -1,0 +1,66 @@
+include ../_mixins 
+section#subscribe.invert
+  //- .svg-rotate
+    svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+      polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+      96.526,50.217 73.481,90.217 ')
+    svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+      polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+      96.526,50.217 73.481,90.217 ')
+    svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='100px', height='100px', viewbox='0 0 100 100', enable-background='new 0 0 100 100', xml:space='preserve')
+      polygon(fill='none', stroke='#000000', stroke-miterlimit='10', points='27.394,90.217 4.349,50.217 27.394,10.217 73.481,10.217 \
+      96.526,50.217 73.481,90.217 ')
+  .container
+    .container-inner
+      h1.center-lg.bright.w700 
+        +star() 
+        | Subscribe and get 10% off.
+      hr.small.hide-lg
+      p.center-lg Get occassional updates and product news.
+      form#discount(action='javascript:void(0);')
+        .input-wrap.flex.flex-equal
+          input#emailEl(placeholder="Enter your email..." type='email' autocomplete='email')
+          button.bold(type='button' onclick='submitEmail()')
+              .flex.align-items-center
+                  .icon.icon-play
+      #emailConfirmation(style='display:none')
+        p Thank you!
+          //- input#discount-input.button(type='email', placeholder='nikk@example.com')
+          //- button.rainbow-bottom.extended(onclick="submitEmail(this, '#discount-input', '#form-submitted')")
+          //-   span.icon-mail.iconed
+          //-   a Submit
+  //- figure#modal(display='none')
+    | Thanks!
+
+  style.
+    #subscribe {
+      padding: 6rem 0 12rem 0;
+      position: relative;
+      background-size: cover;
+      background-position: 50% 50%;
+    } 
+    #subscribe > * {
+      z-index: 1;
+      position: relative;
+    }
+    #subscribe:after {
+      background: #08082d;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      content: '';
+    }
+    .container-inner {
+      max-width: 700px;
+    }
+    input {
+      background: initial;
+      border: 1px solid!important;
+    }
+    @media (min-width: 768px) {
+      #subscribe {
+      }
+    }

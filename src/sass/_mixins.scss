@@ -1,0 +1,137 @@
+@import './_vars';
+
+//———————————————————————————
+//
+//
+// Functions
+//
+//
+//———————————————————————————
+
+@function getColor($c, $opacity){
+  @return (rgba($c, $opacity)); 
+}
+
+// @function lighten($colorStr, $opacity) {
+// 	@return lighten($colorStr, $opacity);
+// }
+
+//———————————————————————————
+//
+//  
+// Mixins
+//
+//
+//——————————————————————————— 
+
+@mixin box($color) {
+	box-shadow: 0 25px 93px -10px desaturate(lighten($color, 35), 30),
+		0 -5px 33px -10px desaturate(lighten($color, 35), 30);
+}
+
+@mixin fillColor($colorStr, $opacity) {
+	fill: getColor($colorStr, $opacity);
+}
+
+@mixin justify-content($value) {
+  -webkit-box-pack: $value;
+  -webkit-justify-content: $value;
+      -ms-flex-pack: $value;
+          justify-content: $value;
+}
+
+@mixin align-items($value) {
+	-ms-flex-align: $value; // IE10
+	-webkit-box-align: $value;
+	-webkit-align-items: $value; // Safari / iOS
+	align-items: $value;
+}
+
+@mixin align-self($value) {
+	-ms-flex-self: $value; // IE10
+	-webkit-box-self: $value;
+	-webkit-align-self: $value; // Safari / iOS
+	align-self: $value;
+}
+
+
+@mixin flex-direction($value) {
+	-ms-flex-direction: $value; // IE10
+	-webkit-flex-direction: $value; // Safari / iOS
+	flex-direction: $value;
+}
+
+@mixin flex-wrap($value) {
+	-ms-flex-wrap: $value;
+	-webkit-flex-wrap: $value; // Safari / iOS
+	flex-wrap: $value;
+}
+
+@mixin flex-child($value) {
+
+  -webkit-box-flex: $value;   /* OLD - iOS 6-, Safari 3.1-6 */
+  -webkit-flex: $value;       /* Safari 6.1+. iOS 7.1+, BB10 */
+  -ms-flex: $value;  
+  flex: $value;
+}
+
+@mixin flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin pseudo() {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+}
+
+@mixin title() {
+	// color: $color-secondary-subtle-2;
+}
+
+
+@function subtitle(){
+	@return $color-primary;
+}
+
+@mixin subtle(){
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    opacity: .2;
+}
+
+@mixin subtitle() {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: subtitle();
+	font-weight: 800;
+}
+
+@mixin small() {
+    display: block;
+    font-size: 12px;
+    line-height: 20px;
+    color: $color-secondary;
+    &.para {
+        color: transparentize(desaturate($color-primary, 20), .5);
+    }
+}
+@mixin input {
+	height: 50px;
+	overflow: hidden;
+	border-radius: 4px;
+	background: initial;
+	color: $color-secondary;
+	text-overflow: ellipsis;
+	font-weight: 800;
+	&[disabled] {
+		opacity: .5;
+	}
+}

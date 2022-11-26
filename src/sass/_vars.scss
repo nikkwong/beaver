@@ -1,0 +1,82 @@
+$color-primary: #394EFF;
+$color-secondary: #394EFF;
+$color-tri: #3A39A6;
+$color-bg: #D8ECFF;
+
+$color-red: #EF3733;
+$color-yellow: #F0D30C;
+$color-green: #7EC242;
+$color-blue: #5FCCF1;
+
+$rainbow-color-1: #ff6a3f;
+$rainbow-color-2: #ffc700;
+$rainbow-color-3: #efff00;
+$rainbow-color-4: #6aff99;
+$rainbow-color-5: #6abaff;
+$rainbow: linear-gradient(90deg,
+	$rainbow-color-1,
+	$rainbow-color-2, 
+	$rainbow-color-3,
+	$rainbow-color-4,
+	$rainbow-color-5);
+$dark-gradient: linear-gradient(160deg, #3f3f3f, #101010);
+$rainbow-vert: linear-gradient(180deg,
+	$rainbow-color-1,
+	$rainbow-color-2,
+	$rainbow-color-3,
+	$rainbow-color-4,
+	$rainbow-color-5);
+$border: 1px solid rgba(70,80,87,0.2);
+
+$mobile-base-font-size: 12px;
+$tablet-base-font-size: 15px;
+$desktop-base-font-size: 18px;
+
+$h1-size: 1.75rem;
+$h2-size: 2.25rem;
+$h3-size: 2rem;
+$h4-size: 1.75rem;
+$h5-size: 1.5rem;
+$h6-size: 1.25rem;
+$text-size: 1.2rem;
+$description-size: .85rem;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-max-container-width: 1168px;
+
+$font-margin: 0;
+$font-highlight-weight: 500;
+$font-default-weight: 400;
+$font-description-weight: 400;
+$font-disclaimer-weight: 400;
+$font: 'Open sans', sans-serif!important;
+
+$font-description-color: rgba(134,128,132,1);
+$font-subhighlight-color: rgba(240,44,69,1);
+
+$container-margin: 2rem 1rem;
+$container-tablet-margin: 4rem;
+$container-desktop-margin: 6rem;
+
+$container-tall-padded: 4em 0;
+
+$detail-width: 3px;
+
+// Border
+
+$button-border: 2px solid;
+// $border-color: $color-primary;
+$border-color: rgba(0, 40, 71, 0.1);
+$shadow: 0 4px 4px 0px rgba(0, 40, 71, 0.1);
+
+// Button
+
+$button-border-radius: 99999px;
+$button-background: #ffffff;
+$button-min-width: 200px;
+$button-height: 45px;
+$button-shadow: $shadow;
+$button-width: 130px;
+$button-padding: 10px 20px;
+$button-font-size: 2rem;

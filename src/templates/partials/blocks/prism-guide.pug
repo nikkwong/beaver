@@ -1,0 +1,52 @@
+#prism-photo-guide.text-center.flex.justify-content-center.align-items-center
+  #prism-photo-guide-inner
+    hgroup
+      h4 Prism photography quick reference guide
+      h6 Remember these tricks to get great prism images.
+    button.bold 
+        .flex.align-items-center
+            .icon.icon-file-text.mr1
+            | Read
+style.
+  #prism-photo-guide {
+    padding: 10rem 3rem 4rem;
+    position: relative;
+    background: url(/static/2017/ff-usage.jpg);
+    background-size: cover;
+  }
+  #prism-photo-guide:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #08082dcf;
+  }
+  hgroup {
+      color: white;
+  }
+  div#prism-photo-guide * {
+      z-index: 1;
+      position: relative;
+      color: white;
+  }
+
+  div#gallery:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+  }
+
+  div#gallery {
+      position: relative;
+  }
+  .img-wrapper {
+    height: 200px;
+  }
+  h4 {
+    margin: 0;
+  }
