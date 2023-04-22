@@ -21,7 +21,6 @@
     "gulp": "^3.9.1",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.2.1",
-    "http-proxy": "^1.18.1",
     "jquery": "^3.2.1",
     "mongodb": "^2.0.36",
     "mongoose": "^4.1.6",

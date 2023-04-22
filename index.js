@@ -8,13 +8,6 @@ var https = require("https");
 //     key: privateKey,
 //     cert: certificate
 // };
-var httpProxy = require("http-proxy");
-var tetricus = new httpProxy({
-  target: {
-    host: "127.0.0.1",
-    port: "8081",
-  },
-});
 
 let config = require("./config");
 // var mongoose = require('mongoose');
@@ -203,9 +196,6 @@ app.use("/asq", (req, res, next) => {
 });
 app.use("/slice", (req, res, next) => {
   return res.sendfile("assets/sites/slice/index.html", { root: "" });
-});
-app.use("/tetricus", (req, res, next) => {
-  return tetricus.proxyRequest(req, res, next);
 });
 app.all("*", function (req, res, next) {
   // if (req.hostname === 'beaver.digital')
