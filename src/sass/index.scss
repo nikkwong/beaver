@@ -469,6 +469,16 @@ html,body {
     }
   }
 }
+// hide dates
+.b-content-item-logo {
+  small {
+    display: none
+  }
+}
+iframe {
+  height: 1000px;
+  margin-top: 1rem;
+}
 
 @media (max-width: 768px) {
   
