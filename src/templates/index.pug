@@ -1,5 +1,6 @@
 extends partials/_layout
 append head
+    script(type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js")
     +header({"type": "home", "title": "Beaver Homepage Design.", "metadescription": "Beaver Digital: The portfolio of Nikk Wong & Thom Malone.", "fbimg":
     "http://www.beaver.digital/static/assets/img/filter-in-action.jpg", "metacontent": "http://www.beaver.digital", "desc": "Beaver Digital: Professional homepage design"}) 
 block content
@@ -243,7 +244,7 @@ block content
                                 p client satisfaction
                         .d-content-bullet
                             .d-content-bullet-inner.flex.flex-column.align-items-center
-                                h1.xl 14 day
+                                h1.xl 10 day
                                 p turnaround
             section#e
                 #e-content.container.flex.flex-column
@@ -383,6 +384,7 @@ block content
                             .flex.align-items-center
                                 p Submit
                                 .icon-chevron-right.ml1.inline
+                #calendly
         footer 
             #footer-content.container.flex.flex-column
                 #footer-content-top.hide-lg.flex.justify-content-center
@@ -395,9 +397,16 @@ block content
                     .icon-beaver.hide-sm
                     .flex.align-items-center
                         span.icon-noun_7150_cc.mr1
-                        small built in Seattle & Toronto
+                        small built in Seattle
         script.
             window.addEventListener('DOMContentLoaded', function() {
+
+              Calendly.initInlineWidget({
+                url: 'https://calendly.com/o---xn4/30min',
+                parentElement: document.getElementById('calendly'),
+                prefill: {},
+                utm: {}
+              });
 
                 setTimeout(() => {
 
